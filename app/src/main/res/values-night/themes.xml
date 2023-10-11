@@ -1,0 +1,17 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.UnitConverter" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_background</item>
+        <item name="colorPrimaryVariant">@color/button_background</item>
+        <item name="colorOnPrimary">@color/primary_background</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <item name="android:textColor">@color/title</item>
+        <item name="android:textColorSecondary">@color/title</item>
+
+        <item name="android:background">@color/primary_background</item>
+    </style>
+</resources>

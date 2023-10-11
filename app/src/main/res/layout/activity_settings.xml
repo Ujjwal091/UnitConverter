@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/primary_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:titleTextColor="@color/title" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/selectQuantityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/select_quantity"
+        android:textColor="@color/title"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <View
+        android:id="@+id/horizontalRule"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/text"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectQuantityTitle" />
+
+    <RadioGroup
+        android:id="@+id/quantity_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalRule">
+
+        <RadioButton
+            android:id="@+id/areaBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/title"
+            android:onClick="selectArea"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/area"
+            android:textColor="@color/text" />
+
+        <RadioButton
+            android:id="@+id/lengthBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/title"
+            android:onClick="selectLength"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/length"
+            android:textColor="@color/text" />
+
+        <RadioButton
+            android:id="@+id/temperatureBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/title"
+            android:onClick="selectTemperature"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/temperature"
+            android:textColor="@color/text" />
+
+        <RadioButton
+            android:id="@+id/volumeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/title"
+            android:onClick="selectVolume"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/volume"
+            android:textColor="@color/text" />
+
+        <RadioButton
+            android:id="@+id/massBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/title"
+            android:onClick="selectMass"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/mass"
+            android:textColor="@color/text" />
+
+        <RadioButton
+            android:id="@+id/dataBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/title"
+            android:includeFontPadding="false"
+            android:onClick="selectData"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/data"
+            android:textColor="@color/text" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
